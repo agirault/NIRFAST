@@ -44,6 +44,8 @@ if format == 1 % tetgen format
     if dim==3
         if not(verLessThan('matlab','9.4')) % R2018< bufsize is causing a problem.
         data = textscan(fid,'%u32 %f %f %f%*[^\n]','bufsize',409500);
+        else
+        data = textscan(fid,'%u32 %f %f %f%*[^\n]');
         end
         p=[data{2} data{3} data{4}];
     elseif dim==2
