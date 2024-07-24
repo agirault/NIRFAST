@@ -511,7 +511,7 @@ double boundary_int(double gg[4][3], double bnd_index[4], double ksir[4], \
     
     *valr = sres*side_size*ksitmp_r;  
   }
-  else if (bnd_index[0]==1 && bnd_index[3]==1 && bnd_index[2]==1){ 
+  else if (bnd_index[1]==1 && bnd_index[3]==1 && bnd_index[2]==1){ 
     static double sd4_intf1ff[4][4]={{0.0,0.0,0.0,0.0},\
 				     {0.0,0.0,0.0,0.0},\
 				     {0.0,0.0,0.0,0.0},\
